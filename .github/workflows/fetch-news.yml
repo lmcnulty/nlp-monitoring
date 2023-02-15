@@ -25,8 +25,7 @@ jobs:
         run: python3 -c 'import nltk; nltk.download("punkt")'
 
       - name: Install JS dependencies
-        run: npm install
-        working-directory: ./nlp-monitoring
+        run: npm install -g @postlight/mercury-parser
 
       - name: fetch_news.py
         run: python3 fetch_news.py
