@@ -26,7 +26,6 @@ jobs:
 
       - name: Install JS dependencies
         run: npm install
-        working-directory: ./nlp-monitoring
 
       - name: fetch_news.py
         run: python3 fetch_news.py
